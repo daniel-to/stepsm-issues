@@ -16,11 +16,11 @@ export default () => {
         </div>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav">
-          <li class="dropdown">
-          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" className="settings">
+          <li className="dropdown">
+          	<a href="#" className="dropdown-toggle settings" data-toggle="dropdown">
 					    <i className="fa fa-cog"></i><span>Settings</span>
 					    </a>
-    					<ul class="dropdown-menu closed">
+    					<ul className="dropdown-menu closed">
                 <li>
                   <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="login">
                     <i className="fa fa-sign-in"></i><span>Sign in</span>
