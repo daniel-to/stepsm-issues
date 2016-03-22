@@ -1,0 +1,51 @@
+import React from 'react';
+export default () => {
+  return (
+    <nav className="navbar navbar-default" role="navigation">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+          <a className="navbar-brand" href="/user/main">
+            <i className="fa fa-home"></i><span>Home</span>
+          </a>
+        </div>
+        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul className="nav navbar-nav">
+          <li class="dropdown">
+          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" className="settings">
+					    <i className="fa fa-cog"></i><span>Settings</span>
+					    </a>
+    					<ul class="dropdown-menu closed">
+                <li>
+                  <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="login">
+                    <i className="fa fa-sign-in"></i><span>Sign in</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" onClick={ Steps.logout }>
+                   <i className="fa fa-sign-out"></i><span>Logout</span>
+                  </a>
+                </li>
+                </ul>
+            </li>
+            { /*<li>
+                <button  className='btn btn-default navbar-btn' data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" onClick={ Steps.logout }>
+                  Logout
+                </button>
+                </li>*/ }
+            <li>
+              <a data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" href="help">
+                                                                                                                             Help me
+                                                                                                                        </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    );
+};
